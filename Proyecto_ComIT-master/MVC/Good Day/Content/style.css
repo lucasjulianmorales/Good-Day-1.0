@@ -1,0 +1,26 @@
+/*carousel*/
+
+.carousel img{
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.carousel-caption
+{
+    color: #333;
+    background-color: rgba(255,255,255,0.7);
+}
+.carousel-indicators li {
+	width: 23px;
+	height: 3px;    
+    background-color:  rgba(59, 59, 59, 0.54);
+	border: 0px;
+	border-radius: 0px;
+    margin: 0px;
+}
+.carousel-indicators .active {
+	width: 23px;
+	height: 3px;
+	background-color: #fff;
+    border: 0px;
+}

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="menuNota">
+    <div class="container-fluid">
+        <div class="row centerText">
+            <h2 class="Salsa">Libretas</h2>
+            <div id="barIcon" class="col-xs-2">
+                <nav>
+                    <ul>
+                        <li id="libreta"><a data-toggle="modal" data-target="#nuevaLibreta" role="button"><span class="icon icon-book" aria-hidden="true"></span></a></li>
+                        <li id="calendario"><a href="#" role="button"><span class="icon icon-calendar" aria-hidden="true"></span></a></li>
+                        <li id="papelera"><a href="#" role="button"><span class="icon icon-trash-o" aria-hidden="true"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="nuevaLibreta" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Crear Libreta</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="@Url.Action("CreateLibreta","Libretas")" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="nameLibreta" placeholder="Nombre Libreta...">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    @if (ViewBag.Libreta != null)
+                    {
+                        foreach (Good_Day.Models.Libreta libreta in ViewBag.Libreta)
+                        {
+                            <div class="col-xs-5 col-sm-3 col-lg-2">
+                                
+                                    <a href="@Url.Action("Notas", "Notas", new { libretaID = libreta.ID_libreta })">
+                                        <div class="boxLibreta">
+                                        <h3>@libreta.NameLibreta</h3>
+                                        </div>
+                                    </a>
+                                
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
