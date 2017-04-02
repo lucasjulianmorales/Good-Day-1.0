@@ -306,3 +306,47 @@ C:\Users\Lucas\Downloads\Proyecto_ComIT-master\Proyecto_ComIT-master\MVC\Good Da
 C:\Users\Lucas\Downloads\Proyecto_ComIT-master\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.csprojResolveAssemblyReference.cache
 C:\Users\Lucas\Downloads\Proyecto_ComIT-master\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.dll
 C:\Users\Lucas\Downloads\Proyecto_ComIT-master\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.pdb
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.csprojResolveAssemblyReference.cache
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\obj\Debug\Good Day.pdb
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\csc.exe
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\System.Collections.Immutable.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\System.Reflection.Metadata.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\vbc.exe
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\VBCSCompiler.exe
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\roslyn\VBCSCompiler.exe.config
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Good Day.dll.config
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Good Day.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Good Day.pdb
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Antlr3.Runtime.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\EntityFramework.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\EntityFramework.SqlServer.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Microsoft.Web.Infrastructure.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Newtonsoft.Json.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Helpers.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Mvc.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Optimization.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Razor.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.Deployment.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.Razor.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\WebGrease.dll
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\EntityFramework.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\EntityFramework.SqlServer.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Helpers.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Mvc.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Optimization.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.Razor.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.Deployment.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\System.Web.WebPages.Razor.xml
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Antlr3.Runtime.pdb
+E:\Repositorio\GoodDay\Proyecto_ComIT-master\MVC\Good Day\bin\Newtonsoft.Json.xml

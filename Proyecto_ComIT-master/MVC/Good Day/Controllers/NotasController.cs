@@ -24,11 +24,27 @@ namespace Good_Day.Controllers
 
             Nota nuevaNota = new Nota();
             nuevaNota.NameNota = nameNota;
-            nuevaNota.ID_tag = ;
+            //nuevaNota.ID_tag = ;
           
 
             NotasManager manager = new NotasManager();
             manager.Insertar(nuevaNota);
+
+            return RedirectToAction("Notas", "Notas");
+
+        }
+
+        [HttpPost]
+        public ActionResult CreateTag(string nameTag, int libretaID)
+        {
+
+            Tag nuevatag = new Tag();
+            nuevatag.NameTag = nameTag;
+            nuevatag.ID_Libreta = (libretaID);
+
+            TagManager manager = new TagManager();
+            manager.Insertar(nuevatag);
+
 
             return RedirectToAction("Notas", "Notas");
 

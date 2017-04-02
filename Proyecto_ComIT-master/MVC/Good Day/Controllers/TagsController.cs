@@ -20,9 +20,7 @@ namespace Good_Day.Controllers
 
             Tag nuevatag = new Tag();
             nuevatag.NameTag = nameTag;
-            nuevatag.ID_Libreta = ;
-           
-
+  
             TagManager manager = new TagManager();
             manager.Insertar(nuevatag);
 
