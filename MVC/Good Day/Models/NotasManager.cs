@@ -9,15 +9,17 @@ namespace Good_Day.Models
 {
     public class NotasManager
     {
-        public Nota Insertar(Nota nota)
+        public Nota Insertar(Nota nota, int tagID)
         {
             SqlConnection conexion = new SqlConnection(ConfigurationManager.AppSettings["ConexionBaseDeDatos"]);
             conexion.Open();
             SqlCommand query = conexion.CreateCommand();
 
-            query.CommandText = "insert into Nota (NameNota) values (@NameNota)";
+            query.CommandText = "insert into Nota (NameNota, ID_tag) OUTPUT INSERTED.ID_nota values (@NameNota, @ID_tag)";
+            query.Parameters.AddWithValue("@NameNota", nota.NameNota);
+            query.Parameters.AddWithValue("@ID_tag", tagID);
 
-            query.ExecuteNonQuery();
+            nota.ID_notas =(int)query.ExecuteNonQuery();
 
             conexion.Close();
 

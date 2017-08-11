@@ -11,7 +11,7 @@ namespace Good_Day.Models
     {
         public Tag Insertar (Tag tag, int libretaID)
         {
-            
+    
 
             SqlConnection conexion = new SqlConnection(ConfigurationManager.AppSettings["ConexionBaseDeDatos"]);
             conexion.Open();
@@ -22,7 +22,7 @@ namespace Good_Day.Models
             query.Parameters.AddWithValue("@ID_libreta", libretaID);
 
             tag.ID_tag = (int)query.ExecuteScalar();
-
+                
             conexion.Close();
 
             return tag;

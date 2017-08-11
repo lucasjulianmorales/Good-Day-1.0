@@ -72,8 +72,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5c6d0', end
     margin-bottom: 2vw;
 }
 
-
-
+#formAddNote{
+    display:none;
+}
 
 /*Barra Lateral*/
 
@@ -112,6 +113,8 @@ div #barIcon a:hover{
 
 }
 
+
+
 /*Botones*/
 
 .btn-outline-info {
@@ -126,6 +129,15 @@ div #barIcon a:hover{
     background-image: none;
     background-color: transparent;
     border-color: darkgray;
+}
+
+.arrow-back {
+    font-size: 2vw;
+    float: left;
+    position: absolute;
+    left: 0vw;
+    top: 5vw;
+    padding: 1vw;  
 }
 
 
@@ -150,6 +162,8 @@ top: 2vw;
 left: 2vw;
 font-size:3.0vw;
 }
+
+
 
 
 

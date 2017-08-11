@@ -394,3 +394,47 @@ E:\Repositorio\GoodDay\MVC\Good Day\bin\Newtonsoft.Json.xml
 E:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.csprojResolveAssemblyReference.cache
 E:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.dll
 E:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.pdb
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\csc.exe
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\System.Collections.Immutable.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\System.Reflection.Metadata.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\vbc.exe
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\VBCSCompiler.exe
+D:\Repositorio\GoodDay\MVC\Good Day\bin\roslyn\VBCSCompiler.exe.config
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Good Day.dll.config
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Good Day.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Good Day.pdb
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Antlr3.Runtime.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\EntityFramework.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\EntityFramework.SqlServer.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Microsoft.Web.Infrastructure.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Newtonsoft.Json.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Helpers.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Mvc.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Optimization.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Razor.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.Deployment.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.Razor.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\WebGrease.dll
+D:\Repositorio\GoodDay\MVC\Good Day\bin\EntityFramework.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\EntityFramework.SqlServer.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Helpers.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Mvc.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Optimization.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.Razor.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.Deployment.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\System.Web.WebPages.Razor.xml
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Antlr3.Runtime.pdb
+D:\Repositorio\GoodDay\MVC\Good Day\bin\Newtonsoft.Json.xml
+D:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.csprojResolveAssemblyReference.cache
+D:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.dll
+D:\Repositorio\GoodDay\MVC\Good Day\obj\Debug\Good Day.pdb

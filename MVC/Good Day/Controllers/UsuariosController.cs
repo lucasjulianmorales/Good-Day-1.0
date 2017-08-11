@@ -27,8 +27,8 @@ namespace Good_Day.Controllers
        
             UsuarioManager manager = new UsuarioManager();
             manager.Insertar(nuevoUsuario);
-
-            return RedirectToAction("Home", "Home");
+           return DoLogin(mail,password);
+            //return RedirectToAction("DoLogin", new { mail, password });
 
         }
         public ActionResult Login()

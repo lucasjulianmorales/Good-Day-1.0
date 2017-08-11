@@ -19,13 +19,8 @@ namespace Good_Day.Controllers
             List<Libreta> libretas = manager.ConsultarLibretas(((Usuario)Session["UsuarioLogueado"]).ID_usuario);
             ViewBag.Libreta = libretas;
 
-            return View();
+            return View(); 
         }
-      
-
-       
-
-
     
     }
 }

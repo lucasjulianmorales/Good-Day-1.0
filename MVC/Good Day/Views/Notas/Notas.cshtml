@@ -8,18 +8,17 @@
 <div class="menuNota">
     <div class="container-fluid">
         <div class="row centerText">
-            @if (ViewBag.Libreta != null)
-            {
-            <h2 class="Salsa">@ViewBag.Libreta.NameLibreta</h2>
-            }
            
+            <h2 class="Salsa">@ViewBag.Libreta.NameLibreta</h2>
+        
+            <a href="@Url.Action("Home","Home")" role = "button"><span class="icon-arrow-left arrow-back" aria-hidden="true"></span></a>    
             <div id="barIcon" class="col-xs-2">
                 <nav>
                     <ul>
                         <li id="tag"><a data-toggle="modal" data-target="#nuevaTag" role="button"><span class="icon icon-tag" aria-hidden="true"></span></a></li>
                         <li id="calendario"><a href="#" role="button"><span class="icon icon-calendar" aria-hidden="true"></span></a></li>
                         <li id="papelera"><a href="#" role="button"><span class="icon icon-trash-o" aria-hidden="true"></span></a></li>
-                        <li id="ajustes"><a href="#" role="button"><span class="icon icon-cog" aria-hidden="true"></span></a></li>
+                 
                     </ul>
                 </nav>
             </div>
@@ -44,9 +43,9 @@
                                                 <li class="boxNota"><a href="#">@nota.NameNota</a></li>
                                             }
                                         }
-                                        <li><a id="#agregarNota">añadir nota...</a></li>
+                                        <li><a id="addNote" href="#">añadir nota...</a></li>
                                     </ul>
-                                    <form id="formAgregarNota" class="form-inline invisible" action="@Url.Action("CreateNota", "Notas")" method="post">
+                                    <form id="formAddNote" class="form-inline" action="@Url.Action("CreateNota", "Notas")" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="nameNota" placeholder="Escribe tu nota...">
                                         </div>
@@ -94,3 +93,4 @@
         </div>
     </div>
 </div>
+

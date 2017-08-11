@@ -52,7 +52,7 @@ namespace Good_Day.Models
 
             conexion.Close();
         }
-        public Libreta ConsultarLibreta(int id)
+        public Libreta ConsultarLibreta(int valor)
             {
             Libreta libreta = new Libreta();
 
@@ -61,7 +61,7 @@ namespace Good_Day.Models
             conexion.Open();
             SqlCommand query = conexion.CreateCommand();
             query.CommandText = "Select Libreta.NameLibreta From Libreta Where Libreta.ID_libreta = @ID_libreta";
-            query.Parameters.AddWithValue("@ID_libreta", id);
+            query.Parameters.AddWithValue("@ID_libreta", valor);
 
             SqlDataReader reader = query.ExecuteReader();
             if (reader.Read())
