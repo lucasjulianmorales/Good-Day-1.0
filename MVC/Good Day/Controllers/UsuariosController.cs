@@ -57,7 +57,8 @@ namespace Good_Day.Controllers
 
         public ActionResult Logout()
         {
-            Session["UsuarioLogueado"] = null;
+            Session.Clear();
+            //Session["UsuarioLogueado"] = null;
             return RedirectToAction("Index", "Home");
         }
     }

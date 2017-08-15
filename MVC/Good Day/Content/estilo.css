@@ -72,7 +72,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5c6d0', end
     margin-bottom: 2vw;
 }
 
-#formAddNote{
+.formAddNota{
     display:none;
 }
 

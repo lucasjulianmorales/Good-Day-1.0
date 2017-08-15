@@ -39,13 +39,13 @@
                                         @if (ViewBag.Nota != null)
                                         {
                                             foreach (Good_Day.Models.Nota nota in ViewBag.Nota)
-                                            {
+                                            { 
                                                 <li class="boxNota"><a href="#">@nota.NameNota</a></li>
                                             }
                                         }
-                                        <li><a id="addNote" href="#">añadir nota...</a></li>
+                                        <li><a class="addNota" href="#">añadir nota...</a></li>
                                     </ul>
-                                    <form id="formAddNote" class="form-inline" action="@Url.Action("CreateNota", "Notas")" method="post">
+                                    <form  class ="form-inline formAddNota" action="@Url.Action("CreateNota", "Notas")" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="nameNota" placeholder="Escribe tu nota...">
                                         </div>

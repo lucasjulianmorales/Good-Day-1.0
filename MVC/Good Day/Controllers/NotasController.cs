@@ -40,17 +40,15 @@ namespace Good_Day.Controllers
         {
             int tagID = (int)Session["ID"];
 
-            int libID = (int)Session["ID"];
-
             Nota nuevaNota = new Nota();
             nuevaNota.NameNota = nameNota;
-        
-          
 
             NotasManager manager = new NotasManager();
             manager.Insertar(nuevaNota, tagID);
 
-            return Notas(libID);
+            return Notas(tagID);
+
+        
 
         }
     }

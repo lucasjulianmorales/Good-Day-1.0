@@ -1,8 +1,11 @@
 
 
     $(document).ready(function () {
-        $('#addNote').click(function () {
-            $('#formAddNote').toggle();
+        $(this).parent('.AddNota').click(function () {
+            $(this).parent('.formAddNota').show();
         })
     });
+
+
+
 
