@@ -1,8 +1,20 @@
 
 
     $(document).ready(function () {
-        $(this).parent('.AddNota').click(function () {
-            $(this).parent('.formAddNota').show();
+        $('addNota').on('click', function () {
+
+            
+
+            IDtagLink = $(this).attr('id')
+
+            IDtagForm = $(this).attr('id')
+
+            if (IDtagLink == IDtagForm) {
+
+            $(this)('formAddNote').toggle();
+
+            }
+            alert($(this).attr('id'));  
         })
     });
 

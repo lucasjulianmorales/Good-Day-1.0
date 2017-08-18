@@ -51,7 +51,6 @@ namespace Good_Day.Models
                 notas.Add(nota);
             }
             reader.Close();
-
             conexion.Close();
 
             return notas;

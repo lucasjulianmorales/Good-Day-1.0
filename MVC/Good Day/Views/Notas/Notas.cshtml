@@ -43,16 +43,18 @@
                                                 <li class="boxNota"><a href="#">@nota.NameNota</a></li>
                                             }
                                         }
-                                        <li><a class="addNota" href="#">añadir nota...</a></li>
+                                        <li><a id="@tag.ID_tag" class="addNota" href="#">añadir nota...</a></li>
                                     </ul>
-                                    <form  class ="form-inline formAddNota" action="@Url.Action("CreateNota", "Notas")" method="post">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="nameNota" placeholder="Escribe tu nota...">
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-info">Guardar</button> 
-                                        </div>
-                                    </form>
+                                   
+                                        <form id="@tag.ID_tag" class="formAddNota" action="@Url.Action("CreateNota", "Notas")" method="post">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="nameNota" placeholder="Escribe tu nota...">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-info">Guardar</button>
+                                            </div>
+                                        </form>
+                                   
 
                                 </div>
                             </div>
