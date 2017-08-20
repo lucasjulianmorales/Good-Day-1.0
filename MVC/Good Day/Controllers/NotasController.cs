@@ -12,23 +12,22 @@ namespace Good_Day.Controllers
         // GET: Notas   
         public ActionResult Notas (int libretaID)
         {
-            Session["ID"] = libretaID; //creo una session para guardar el ID_libreta 
-
+          
+            //Muestro en la vista de NOTAS
             //se nesecita hacer una consulta para traer Tags al controlador y despues pasarselos a la viewbag de la vista
 
             TagManager manager = new TagManager();
             List<Tag> tags = manager.ConsultarTags(libretaID);
             ViewBag.Tag = tags;
 
-
             //se nesecita hacer una consulta para traer el nombre de la librta al controlador y despues pasarselos a la viewbag de la vista
+            
             LibretaManager admin = new LibretaManager();
             Libreta libreta = admin.ConsultarLibreta(libretaID);
             ViewBag.Libreta = libreta;
 
-
-            NotasManager organiza = new NotasManager();
-            List<Nota> notas = organiza.ConsultarNotas(libretaID);
+            NotasManager mostrar = new NotasManager();
+            List<Nota> notas = mostrar.ConsultarNotas(libretaID);
             ViewBag.Nota = notas;
 
             return View();
@@ -36,9 +35,9 @@ namespace Good_Day.Controllers
         }
  
         [HttpPost]
-        public ActionResult CreateNota(string nameNota)
+        public ActionResult CreateNota(string nameNota, int tagID)
         {
-            int tagID = (int)Session["ID"];
+            int libID = (int)Session["ID"]; //le paso la session de ID_libreta
 
             Nota nuevaNota = new Nota();
             nuevaNota.NameNota = nameNota;
@@ -46,10 +45,7 @@ namespace Good_Day.Controllers
             NotasManager manager = new NotasManager();
             manager.Insertar(nuevaNota, tagID);
 
-            return Notas(tagID);
-
-        
-
+            return RedirectToAction("Notas",libID);
         }
     }
 }

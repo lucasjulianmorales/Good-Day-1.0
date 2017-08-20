@@ -36,17 +36,19 @@
                                     <h4>@tag.NameTag</h4>
                                     <hr class="borde">
                                     <ul class="lista">
-                                        @if (ViewBag.Nota != null)
+                                        @if (ViewBag.Nota != null && ViewBag.Nota.ID_tag == ViewBag.Tag.ID_tag)
                                         {
-                                            foreach (Good_Day.Models.Nota nota in ViewBag.Nota)
-                                            { 
+                                            foreach (Good_Day.Models.Nota nota in this.ViewBag.Nota)
+
+                                            {
                                                 <li class="boxNota"><a href="#">@nota.NameNota</a></li>
                                             }
                                         }
-                                        <li><a id="@tag.ID_tag" class="addNota" href="#">añadir nota...</a></li>
+ 
+                                        <li><a class="addNotaa" href="#" id="id-@tag.ID_tag">añadir nota...</a></li>
                                     </ul>
-                                   
-                                        <form id="@tag.ID_tag" class="formAddNota" action="@Url.Action("CreateNota", "Notas")" method="post">
+                                    
+                                        <form id="divForm-@tag.ID_tag" class="form-inline formAddNota" action="@Url.Action("CreateNota", "Notas", new {tagID = tag.ID_tag })" method="post">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="nameNota" placeholder="Escribe tu nota...">
                                             </div>
@@ -54,7 +56,8 @@
                                                 <button type="submit" class="btn btn-info">Guardar</button>
                                             </div>
                                         </form>
-                                   
+                                    
+
 
                                 </div>
                             </div>

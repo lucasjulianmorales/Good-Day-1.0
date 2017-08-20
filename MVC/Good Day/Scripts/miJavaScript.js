@@ -1,22 +1,39 @@
 
 
-    $(document).ready(function () {
-        $('addNota').on('click', function () {
+    //$(document).ready(function () {
+    //    $('addNota').on('click', function () {
 
             
 
-            IDtagLink = $(this).attr('id')
+    //        IDtagLink = $(this).attr('id')
 
-            IDtagForm = $(this).attr('id')
+    //        IDtagForm = $(this).attr('id')
 
-            if (IDtagLink == IDtagForm) {
+    //        if (IDtagLink == IDtagForm) {
 
-            $(this)('formAddNote').toggle();
+    //        $(this)('formAddNote').toggle();
 
-            }
-            alert($(this).attr('id'));  
+    //        }
+    //        alert($(this).attr('id'));  
+    //    })
+    //});
+
+
+
+
+    $(document).ready(function () {
+
+        $(document).on('click', '.addNotaa', function () {
+
+            var id = $(this).prop('id');
+            var idForm = id.substring(id.indexOf('-') + 1, id.length);
+
+            $('#divForm-' + idForm).toggle();
         })
     });
+
+
+
 
 
 

@@ -14,21 +14,21 @@ namespace Good_Day.Models
           
             SqlConnection conexion = new SqlConnection(ConfigurationManager.AppSettings["ConexionBaseDeDatos"]);
             conexion.Open();
-            SqlCommand query = conexion.CreateCommand();
-         
-            query.CommandText = "insert into Libreta (NameLibreta) OUTPUT INSERTED.ID_libreta VALUES (@NameLibreta)";
-            query.Parameters.AddWithValue("@NameLibreta", libreta.NameLibreta);
+            SqlCommand queryTabla = conexion.CreateCommand();//se inserta la libreta en la tabla libreta
 
-            libreta.ID_libreta = (int) query.ExecuteScalar();
+            queryTabla.CommandText = "insert into Libreta (NameLibreta) OUTPUT INSERTED.ID_libreta VALUES (@NameLibreta)";
+            queryTabla.Parameters.AddWithValue("@NameLibreta", libreta.NameLibreta);
 
-            SqlCommand sentencia = conexion.CreateCommand();
-    
-            sentencia.CommandText = "insert into Usuario_Libreta (ID_usuario, ID_libreta) OUTPUT INSERTED.ID_libreta values (@ID_usuario, @ID_libreta)";
-            sentencia.Parameters.AddWithValue("@ID_usuario", usuario);
-            sentencia.Parameters.AddWithValue("@ID_libreta", libreta.ID_libreta);
+            libreta.ID_libreta = (int)queryTabla.ExecuteScalar();
 
-            sentencia.ExecuteNonQuery();
+            SqlCommand queryRelacion = conexion.CreateCommand();//se inserta la relacion  usuario_libreta
 
+            queryRelacion.CommandText = "insert into Usuario_Libreta (ID_usuario, ID_libreta) OUTPUT INSERTED.ID_libreta values (@ID_usuario, @ID_libreta)";
+            queryRelacion.Parameters.AddWithValue("@ID_usuario", usuario);
+            queryRelacion.Parameters.AddWithValue("@ID_libreta", libreta.ID_libreta);
+
+            queryRelacion.ExecuteNonQuery();
+            
             conexion.Close();
 
             return libreta;          

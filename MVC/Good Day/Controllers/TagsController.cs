@@ -29,7 +29,7 @@ namespace Good_Day.Controllers
             manager.Insertar(nuevatag, libID);
 
 
-            return RedirectToAction("Notas", "Notas",new { libretaID = libID});
+            return RedirectToAction("Notas", "Notas",libID);
 
         }
 
