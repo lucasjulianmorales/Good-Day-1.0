@@ -35,7 +35,7 @@ namespace Good_Day.Models
 
             SqlCommand query = conexion.CreateCommand();
 
-            query.CommandText = "SELECT Nota.ID_nota, Nota.NameNota FROM Libreta INNER JOIN Tag ON Libreta.ID_libreta = Tag.ID_libreta INNER JOIN Nota ON Tag.ID_tag = Nota.ID_tag WHERE Libreta.ID_libreta = @ID_libreta";
+            query.CommandText = "SELECT Nota.ID_nota, Nota.NameNota, Tag.ID_tag FROM Libreta INNER JOIN Tag ON Libreta.ID_libreta = Tag.ID_libreta INNER JOIN Nota ON Tag.ID_tag = Nota.ID_tag WHERE Libreta.ID_libreta = @ID_libreta";
             query.Parameters.AddWithValue("@ID_libreta", libreta);
 
             SqlDataReader reader = query.ExecuteReader();
@@ -46,6 +46,7 @@ namespace Good_Day.Models
                 Nota nota = new Nota();
                 nota.ID_notas = (int)reader["ID_nota"];
                 nota.NameNota = reader["NameNota"].ToString();
+                nota.ID_tag = (Tag)reader["ID_tag"];
                 //nota.Fecha = (DateTime)reader["Fecha"];
 
                 notas.Add(nota);

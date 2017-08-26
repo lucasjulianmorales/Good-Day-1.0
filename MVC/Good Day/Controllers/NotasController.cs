@@ -29,6 +29,7 @@ namespace Good_Day.Controllers
             NotasManager mostrar = new NotasManager();
             List<Nota> notas = mostrar.ConsultarNotas(libretaID);
             ViewBag.Nota = notas;
+            
 
             return View();
 

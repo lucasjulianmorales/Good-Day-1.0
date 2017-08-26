@@ -22,7 +22,7 @@
                     </ul>
                 </nav>
             </div>
-            
+            @*Recibo los elementos desde la accion Notas del controlador Notas*@
             <div class="container-fluid">
                 <div class="row">
                     @if (ViewBag.Tag != null)
@@ -36,11 +36,13 @@
                                     <h4>@tag.NameTag</h4>
                                     <hr class="borde">
                                     <ul class="lista">
-                                        @if (ViewBag.Nota != null && ViewBag.Nota.ID_tag == ViewBag.Tag.ID_tag)
+                                       
+                                        @if (ViewBag.Nota != null)
                                         {
-                                            foreach (Good_Day.Models.Nota nota in this.ViewBag.Nota)
+                                            foreach (Good_Day.Models.Nota nota in ViewBag.Nota)
 
                                             {
+                                                
                                                 <li class="boxNota"><a href="#">@nota.NameNota</a></li>
                                             }
                                         }
